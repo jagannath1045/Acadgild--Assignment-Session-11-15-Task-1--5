@@ -1,0 +1,11 @@
+> # Import BankMArketing Data 
+View(bank.additional)
+dim(bank.additional)
+str(bank.additional)
+with(bank.additional,table(duration,housing))
+with(bank.additional,table(job,default))
+with(bank.additional,table(cons.price.idx,cons.conf.idx))
+with(bank.additional,table(job,emp.var.rate))
+with(bank.additional,table(education,emp.var.rate))
+pairs.panels(bank.additional[,1:6])
+summary(bank.additional)
